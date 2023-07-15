@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.container > div {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.container > div img {
+  margin-top: 8px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .container > div {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container > div {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
